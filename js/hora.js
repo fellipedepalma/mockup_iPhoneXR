@@ -1,10 +1,11 @@
 // Setar Hora
 function time(){
-    let hoje = new Date();
-    let horas = hoje.getHours();
-    let minutos = hoje.getMinutes();
+    let agora = new Date();
+    let horas = agora.getHours();
+    let minutos = agora.getMinutes();
     
     let pegarHora = document.querySelector('.hours');
     pegarHora.innerHTML = horas + ' : ' + minutos;
     setTimeout('time()', 500);
   }
+time();
